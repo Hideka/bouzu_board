@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>掲示板名：</strong>
+  <%= @board.title %>
+</p>
+
+<p>
+  <strong>内容：</strong>
+  <%= @board.intro %>
+</p>
+
+<%= link_to 'Edit', edit_board_path(@board) %>|
+<%= link_to 'Back', boards_path %>
+
+<hr>
+
+<p><%= link_to '記事一覧へ', board_articles_path(params[:id]) %></p>

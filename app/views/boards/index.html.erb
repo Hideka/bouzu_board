@@ -1,0 +1,15 @@
+<h1>掲示板一覧</h1>
+
+<hr>
+
+<% @boards.each do |board| %>
+
+<p>●掲示板名：<%= link_to board.title, board_path(board) %></p>
+<p>　内容：<%= board.intro %></p>
+<p>　作成日時：<%= board.created_at  %></p>
+
+<hr>
+
+<% end %>
+
+<%= link_to 'New Board', new_board_path  %>

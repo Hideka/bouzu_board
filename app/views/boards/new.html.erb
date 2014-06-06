@@ -1,0 +1,15 @@
+<h2>掲示板新規作成</h2>
+
+<hr>
+
+<form action="/boards" method="post">
+  <p>掲示板名：</p>
+  <p><input name="title" type="text"></input></p>
+  <p>掲示板の内容：</p>
+  <p><textarea name="intro"></textarea></p>
+  <p><input type="submit"/></p>
+</form>
+
+<hr>
+
+<%= link_to '掲示板一覧へ', boards_path  %>

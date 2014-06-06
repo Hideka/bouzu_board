@@ -1,0 +1,9 @@
+<h1>記事</h1>
+
+<% @articles.each do |article|%>
+<p><%= article.user_id %></p>
+<p><%= article.content %></p>
+<p><%= article.created_at %></p>
+<hr>
+<% end %>
+

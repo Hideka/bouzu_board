@@ -1,0 +1,7 @@
+<form action="/board_articles" method="post">
+  <p>記事：</p>
+  <p><textarea name="content" ></textarea></p>
+  <input type="submit"/>
+</form>
+
+

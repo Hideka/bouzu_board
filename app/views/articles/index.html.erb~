@@ -1,0 +1,17 @@
+<h1><%= @board.title %></h1>
+<h3>内容：<%= @board.intro %></h3>
+
+<hr>
+
+<%= link_to '記事作成', new_board_article_path %>
+
+<% @board.articles.each do |article|%>
+<p><%= article.content %></p>
+<p><%= article.created_at %></p>
+<hr>
+<% end %>
+
+<hr>
+
+<%= link_to '掲示板一覧へ', boards_path  %>
+

@@ -1,0 +1,10 @@
+<h1>記事一覧</h1>
+
+<hr>
+
+<% @articles.each do |article|%>
+<p><%= article.content %></p>
+<p><%= article.created_at %></p>
+<hr>
+<% end %>
+

@@ -1,0 +1,11 @@
+<h1>ユーザー一覧</h1>
+
+<hr>
+
+<% @users.each do |user| %>
+<p>ユーザー名：<%= user.name %></p>
+<% end %>
+
+<hr>
+
+<%= link_to 'New User', new_user_path %>
