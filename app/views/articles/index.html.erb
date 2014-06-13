@@ -6,9 +6,11 @@
 <hr>
 
 <% @board.articles.each do |article|%>
+<p><%= article.user.name %></p>
 <p><%= article.content %></p>
 <p><%= article.created_at %></p>
-<%= link_to 'Edit', edit_board_article_path(@board) %>
+<%= link_to 'Edit', edit_board_article_path(@board,article) %>
+<%= link_to 'Destroy', board_article_path(@board,article), method: :delete, data: { confirm: 'Are you sure?' } %>
 <hr>
 <% end %>
 
