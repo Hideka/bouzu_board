@@ -61,8 +61,21 @@ h1{
   border:1px solid #b9b9b9;
 }
 
-.login_password_input:hover{
+.login_password_input:hover {
   border:1px solid black;
   cursor:pointer;
 }
 
+.footer{
+  width:100%;
+  height:30px;
+  position:fixed;
+  bottom:0;
+  background-color:rgb(242,242,242);
+}
+
+.footer p{
+  line-height:30px;
+  float:left;
+  margin-left:20px;
+}
