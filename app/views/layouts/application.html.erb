@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<% if false %>
 <p class="navbar-text pull-right">
 <% if user_signed_in? %>
   Logged in as <strong><%= current_user.email %></strong>.
@@ -24,7 +24,7 @@
 <% if alert %>
   <p class="alert alert-error"><%= alert %></p>
 <% end %>
-
+<% end %>
 <%= yield %>
 
 </body>
