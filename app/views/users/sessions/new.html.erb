@@ -1,7 +1,34 @@
+<div class='wrap_content'>
+  <%= image_tag 'login/logo_2x.png', :class => 'logo_2x' %>
+</div>
+<div class='wrap_content'>
+  <h1 class='login_h1'>アカウント１つですべてのGoogleサービスを。</h1>
+  <h2 class='login_h2'>Googleアカウントでログイン</h2>
+</div>
+<div class='wrap_content'>
+  <div class='login_box'>
+    <%= image_tag 'login/photo.png', :class => 'login_photo' %>
+    <p class='login_name'>Mitsunori Nanno</p>
+    <p>tentenmitsunori@gmail.com</p>
+    <input class='login_password_input' type='text'>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<% if false %>
 <h2>Sign in</h2>
-
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-
   <div><%= f.label :email %><br />
   <%= f.email_field :email, autofocus: true %></div>
 
@@ -14,5 +41,5 @@
 
   <div><%= f.submit "Sign in" %></div>
 <% end %>
-
 <%= render "users/shared/links" %>
+<% end %>
